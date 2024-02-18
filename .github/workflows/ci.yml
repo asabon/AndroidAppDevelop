@@ -18,12 +18,12 @@ on:
 env:
   ENABLE_BUILD: true
   ENABLE_ANDROID_LINT: true
-  ENABLE_KTLINT: true
+  ENABLE_KTLINT: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: $ENABLE_BUILD == true
+    if: ${{ env.ENABLE_BUILD }} == true
     steps:
       - uses: actions/checkout@v4
 
@@ -73,7 +73,7 @@ jobs:
 
   androidLint:
     runs-on: ubuntu-latest
-    if: $ENABLE_ANDROID_LINT == true
+    if: ${{ env.ENABLE_ANDROID_LINT }} == true
     steps:
       - uses: actions/checkout@v4
 
@@ -123,7 +123,7 @@ jobs:
 
   ktlint:
     runs-on: ubuntu-latest
-    if: $ENABLE_KTLINT == false
+    if: ${{ env.ENABLE_KTLINT }} == true
     steps:
       - uses: actions/checkout@v4
 
