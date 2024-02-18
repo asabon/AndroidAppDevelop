@@ -23,7 +23,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ env.ENABLE_BUILD }}
+    if: ${{ env.enable_build }}
     steps:
       - uses: actions/checkout@v4
 
