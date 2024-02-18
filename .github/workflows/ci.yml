@@ -15,15 +15,9 @@ on:
       - README.md
       - LICENSE
 
-env:
-  enable_build: true
-  enable_androidLint: true
-  enable_ktlint: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ env.enable_build == true }}
     steps:
       - uses: actions/checkout@v4
 
@@ -73,7 +67,6 @@ jobs:
 
   androidLint:
     runs-on: ubuntu-latest
-    #if: ${{ env.ENABLE_ANDROID_LINT }} == true
     steps:
       - uses: actions/checkout@v4
 
@@ -123,7 +116,6 @@ jobs:
 
   ktlint:
     runs-on: ubuntu-latest
-    #if: ${{ env.ENABLE_KTLINT }} == true
     steps:
       - uses: actions/checkout@v4
 

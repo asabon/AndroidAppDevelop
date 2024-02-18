@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jmailen.kotlinter")
+    //id("org.jmailen.kotlinter")
 }
 
 android {
