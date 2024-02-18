@@ -2,21 +2,27 @@
 
 ## Overview
 
-* Android アプリ開発のテンプレート的なもの
+- Android アプリ開発のテンプレート的なもの
 
 ## Branches
 
-* ブランチごとに用途、目的を分ける
-* ブランチ
-  * main
-    * 最小構成
-    * Android Studio から新規プロジェクトを起こした状態からできるだけいじらない
-    * GitHub Actions による CI 環境に必要なプラグインなどだけを導入
+- ブランチごとに用途、目的を分ける
+- ブランチ
+  - main
+    - 最小構成
+    - Android Studio から新規プロジェクトを起こした状態からできるだけいじらない
+    - GitHub Actions による CI 環境に必要なプラグインなどだけを導入
+
+## Status
+
+| ブランチ | 用途   | ステータス                                                                                                                                                                                |
+|------|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| main | 最小構成 | [![CI](https://github.com/asabon/AndroidAppDevelop/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/asabon/AndroidAppDevelop/actions/workflows/ci.yml) |
 
 ## Author
 
-* asabon
+- asabon
 
 ## License
 
-* MIT ライセンス
+- MIT ライセンス

@@ -1,0 +1,2 @@
+chikuwa.report "build.log"
+chikuwa.inline_mode = true
