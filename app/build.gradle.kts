@@ -47,10 +47,10 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    lint {
-        xmlReport = true
-        htmlReport = true
-    }
+    //lint {
+    //    xmlReport = true
+    //    htmlReport = true
+    //}
 }
 
 dependencies {
