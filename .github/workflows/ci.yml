@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
+      - LICENSE
+
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
+      - LICENSE
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: gradle
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew assembleDebug 2>&1 | tee build.log
+        continue-on-error: true
+
+      - name: Upload build.log
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
+
+      - name: Setup Ruby, JRuby and TruffleRuby
+        if: github.event_name == 'pull_request'
+        uses: ruby/setup-ruby@v1.171.0
+        with:
+          ruby-version: '3.3'
+
+      - uses: actions/cache@v4
+        if: github.event_name == 'pull_request'
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - uses: MeilCli/danger-action@v5
+        if: github.event_name == 'pull_request'
+        with:
+          plugins_file: 'ci/build/Gemfile'
+          install_path: 'vendor/bundle'
+          danger_file: 'ci/build/Dangerfile'
+          danger_id: 'danger-pr-build'
+        env:
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
