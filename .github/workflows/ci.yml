@@ -24,8 +24,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     #if: ${{ env.ENABLE_BUILD }} == true
-    run: env
     steps:
+      - run: env
+
       - uses: actions/checkout@v4
 
       - name: Setup JDK 21
