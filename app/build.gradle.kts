@@ -79,7 +79,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.0")
 
     // Jetpack Compose (Additional)
-    implementation("androidx.appcompat:appcompat:1.6.1")
+    //implementation("androidx.appcompat:appcompat:1.6.1")
     //implementation("androidx.compose.foundation:foundation:1.6.1")
     //implementation("androidx.compose.foundation:foundation-layout:1.6.1")
     //implementation("androidx.compose.foundation:foundation-layout-android:1.6.1")
