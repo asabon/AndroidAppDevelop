@@ -68,6 +68,30 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Admob
+    implementation("com.google.android.gms:play-services-ads:22.6.0")
+
+    // Material
+    implementation("com.google.android.material:material:1.11.0")
+
+    // Jackson
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.0")
+
+    // Jetpack Compose (Additional)
+    //implementation("androidx.appcompat:appcompat:1.6.1")
+    //implementation("androidx.compose.foundation:foundation:1.6.1")
+    //implementation("androidx.compose.foundation:foundation-layout:1.6.1")
+    //implementation("androidx.compose.foundation:foundation-layout-android:1.6.1")
+
+    // Navigation
+    val navVersion = "2.7.7"
+    implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
+    implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:$navVersion")
+    implementation("androidx.navigation:navigation-compose:$navVersion")
+    androidTestImplementation("androidx.navigation:navigation-testing:$navVersion")
+
 }
 
 kotlinter {
