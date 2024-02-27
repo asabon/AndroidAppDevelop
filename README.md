@@ -34,7 +34,7 @@
   - 目的
     - アプリに画面遷移を容易に実現するための "Navigation" を追加する
 
-## Status
+## 各ブランチのステータス
 
 | Branch                  | Status                                                                                                                                                                                                                                                                                                                             |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -42,10 +42,10 @@
 | feature/admob/main      | [![CI](https://github.com/asabon/AndroidAppDevelop/actions/workflows/ci.yml/badge.svg?branch=feature%2Fadmob%2Fmain&event=push)](https://github.com/asabon/AndroidAppDevelop/actions/workflows/ci.yml)                                                                                                                             |
 | feature/navigation/main | [![CI](https://github.com/asabon/AndroidAppDevelop/actions/workflows/ci.yml/badge.svg?branch=feature%2Fnavigation%2Fmain&event=push)](https://github.com/asabon/AndroidAppDevelop/actions/workflows/ci.yml)                                                                                                                        |
 
-## Author
+## 作者
 
 - asabon
 
-## License
+## ライセンス
 
 - MIT ライセンス
