@@ -16,6 +16,16 @@
   - UnitTest
   - カバレッジ計測
 
+## 依存関係
+
+
+- Kotlin
+  - https://kotlinlang.org/docs/releases.html
+- kotlinter-gradle
+  - https://github.com/jeremymailen/kotlinter-gradle
+- Compose compiler
+  - https://androidx.dev/storage/compose-compiler/repository
+
 ## 作者
 
 - asabon
