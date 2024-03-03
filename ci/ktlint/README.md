@@ -33,3 +33,17 @@
   reporters = arrayOf("checkstyle", "plain")
   }
   ```
+## .editorconfig
+
+### Standard rules
+
+- https://pinterest.github.io/ktlint/latest/rules/standard/
+
+```text
+...
+[*.{kt, kts}]
+insert_final_newline = true
+ktlint_code_style = android_studio
+ktlint_function_naming_ignore_when_annotated_with = Composable
+ktlint_standard_value-argument-comment = disabled
+```
