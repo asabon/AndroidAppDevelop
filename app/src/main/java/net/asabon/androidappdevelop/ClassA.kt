@@ -1,5 +1,11 @@
 package net.asabon.androidappdevelop
 
+/**
+ * テーブル(表)を持ったクラス
+ *
+ * テーブルに対するコメントの仕方について、
+ * linter の警告をコントロールするため。
+ */
 class ClassA {
     fun calculate(a: Int, b: Int): Int {
         val array = arrayOf(
