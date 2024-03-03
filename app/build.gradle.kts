@@ -68,6 +68,9 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // AdMob
+    implementation("com.google.android.gms:play-services-ads:22.6.0")
 }
 
 kotlinter {
