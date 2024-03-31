@@ -7,9 +7,16 @@
 
 - Android アプリ開発のテンプレート
 - Android Studio から新規プロジェクトを作成した状態をベースに必要なプラグインなどを導入
-  - AdMob を使った広告バナー表示
-  - Navigation を使った画面遷移
-- GitHub Actions を利用した CI 環境
+
+## フィーチャー
+
+- UI 構築方法は Jetpack Compose を使用
+- 画面遷移は Navigation を使用
+- Google AdMob を使用したバナー広告表示を導入
+
+## CI環境
+
+- GitHub Actions を利用した CI 環境を構築
   - ビルドチェック
   - Android Lint
   - KtLint
@@ -18,6 +25,13 @@
 
 ## 依存関係
 
+### 動作確認済みのバージョン組み合わせ
+
+| Version | Gradle Plugin | Kotlin | Kotlinter | Kover |
+|---------|---------------|--------|-----------|-------|
+|         | 8.2.2         | 1.9.22 | 4.2.0     | 0.7.5 |
+
+### 参照情報
 
 - Kotlin
   - https://kotlinlang.org/docs/releases.html
